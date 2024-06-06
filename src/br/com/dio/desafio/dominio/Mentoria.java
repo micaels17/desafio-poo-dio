@@ -15,7 +15,6 @@ public class Mentoria extends Conteudo{
 		this.data = data;	
 	}
 
-    @Override
     public double calcularXP() {
         return XP_PADRAO + 20d;
     }
@@ -31,6 +30,11 @@ public class Mentoria extends Conteudo{
     @Override
     public String toString() {
 		return "Mentoria -> Titulo: " + getTitulo() + " | Descricao: " + getDescricao() + " | Carga Horaria: " + getCargaHoraria() +  " | Data: " + data;
+    }
+
+    @Override
+    public double calcularXp() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
    

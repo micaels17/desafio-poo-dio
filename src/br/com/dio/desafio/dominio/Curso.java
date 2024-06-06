@@ -10,7 +10,6 @@ public class Curso extends Conteudo{
 		setCargaHoraria(cargaHoraria);	
 	}
 
-    @Override
     public double calcularXP() {
         return XP_PADRAO * getCargaHoraria();
     }
@@ -21,5 +20,10 @@ public class Curso extends Conteudo{
         return "Curso -> Titulo: " + getTitulo() + " | Descricao: " + getDescricao() + " | Carga Horaria: " + getCargaHoraria() + "h";
     }
 
-  
+		@Override
+		public double calcularXp() {
+			// TODO Auto-generated method stub
+			throw new UnsupportedOperationException();
+		}
+
 }
